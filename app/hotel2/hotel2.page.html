@@ -1,0 +1,199 @@
+<!-- beginning of side menu-->
+<ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu">
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>HotelAdvisor</ion-title>
+
+    </ion-toolbar>
+  </ion-header>
+  <ion-content color="secondary">
+    <!-- content of side menu-->
+    <ion-list>
+      <ion-item color="white" routerLink="/home">Home</ion-item>
+      <ion-item color="white" routerLink="/about">About</ion-item>
+      <ion-item color="white" routerLink="/how-to-use">How to use</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Hotel Princess****
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-router-outlet id="main">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img class="princ2" src="../../assets/img/princess.jpg" width="3000px">
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <!-- description of hotel-->
+        <p>
+          A place where everybody will truly feel like royalty. Importanne Resort’s flagship luxury hotel, The Royal
+          Princess Hotel, was built in 2012, and is located on the Lapad peninsula, only steps from the beautiful
+          Adriatic Sea. The Hotel’s suites cascade down towards the sea providing guests with unique and enchanting
+          views from their own special oasis.With its exceptional amenities, the Royal Princess Hotel meets the needs of
+          every vacationer and business guest, while our friendly and professional hotel team guarantees premium,
+          above-par service.</p>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        <!-- displaying current weather-->
+        <img src="{{weatherObjc.picture}}">
+        <h1>{{weatherObjc.temperature}}°C</h1>
+        {{weatherObjc.description}}
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="3">
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+      <ion-col size="3">
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="3">
+
+        <!-- buttons for Location and more Information-->
+        <ion-button routerLink="/map-locations/42.658746/18.060759">Get Location</ion-button>
+        <ion-button (click)="openWithInAppBrowser('https://www.hotelroyalprincess.com/en/')">More Info</ion-button>
+      </ion-col>
+      <ion-col size="3" offset="3">
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+
+        <br>
+      </ion-col>
+      <ion-col>
+
+        <br>
+        <br>
+      </ion-col>
+      <ion-col>
+
+        <br>
+        <br>
+        <br>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-align-self-start">
+
+      </ion-col>
+      <ion-col class="ion-align-self-center">
+
+      </ion-col>
+      <ion-col class="ion-align-self-end">
+
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-align-items-start">
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+      <ion-col class="ion-align-self-end">
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-align-items-center">
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-align-items-end">
+      <ion-col>
+
+      </ion-col>
+      <ion-col class="ion-align-self-start">
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" size-sm>
+
+      </ion-col>
+      <ion-col size="12" size-sm>
+
+      </ion-col>
+      <ion-col size="12" size-sm>
+
+      </ion-col>
+      <ion-col size="12" size-sm>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6" size-lg offset="3">
+
+      </ion-col>
+      <ion-col size="3" size-lg>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
